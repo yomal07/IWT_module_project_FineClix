@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title>Fineclix - Pricing(Quotation)</title>
+
+<link rel="stylesheet" href="css/headerfooter.css">
+<link rel="stylesheet" href="css/project.css">
+<link rel="stylesheet" href="css/pricing.css">
+<script src="js/quote.js"> </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+</head>
+<body>
+
+  <div class="header">
+    <a href="index.php" ><img src="images/Fineclix.png"   class="logo"></a>
+      <div class="header-right">
+        <a class="offline"  href="index.php">Home</a>
+        <a class="offline" href="#">Log in/Sign Up</a>
+        <a class="offline" href="services.html">Services</a>
+        <a class="offline" href="#">Print and Services</a>
+        <a class="offline" href="#">About Us</a>
+        <a class="offline" href="#">Contact Us</a>
+        <a class="offline" href="#">Join Our Team</a>
+          <div class="headeruser">
+            <a href="#" ><img src="images/user.png"   class="logo1"></a>
+          </div>
+
+    
+  </div>
+</div>
+    <div style="background-image: url(images/quoteBG.jpg); background-size: cover; color: white;">
+        <form class="qoute-form" method="POST" action="quoteDisplay.php">
+            <fieldset>
+                <legend>Get a Quotation</legend>
+
+                <h3>Once the below Data are entered and submitted, the quotation will be sent to you email as well.</h3>
+
+                <label for="qname">Enter Name:</label>
+                <input type="text" name="qname" placeholder="Your Name"><br><br>
+
+                <label for="qemail"> Enter E-mail</label>
+                <input type="email" name="qemail" placeholder="Your Email.."><br><br>
+
+                <label for="qevent">Select the event type</label>
+                <select name="qevent" id="qevent">
+                    <option value="Wedding Photography">Wedding Photography</option>
+                    <option value="Pre-Shoots">Pre-Shoots</option>
+                    <option value="Birthday Party">Birthday Parties</option>
+                    <option value="Convocations">Convocations</option>
+                    <option value="Bride-To-Be">Bride-To-Be</option>
+                    <option value="Prize Givings">Prize Givngs</option>
+                    <option value="Opening Ceromony">Opening Ceromony</option>
+                    <option value="Formal Meetings">Formal Meetings</option>
+                    <option value="Dinner Dance">Dinner Dance</option>
+                    <option value="Festivals">Festivals</option>
+                </select><br><br>
+
+                Do you need venue suggestions and coordination from FinecliX?<br>
+                <input type="radio" name="qvenue" value="Venue Suggestion Needed" required>Yes
+                <input type="radio" name="qvenue"  value="NO VENUE SUGGESTION requested">No<br><br>
+
+                <input type="checkbox" id="qchkbox" onclick="enableSbmt()">I confirm that above information is true and correct<br>
+                <input type="submit" id="qsbmt" name="qsubmitbtn" value="Submit Information" disabled>
+            </fieldset>
+        </form>
+
+    </div>    
+<hr class="line">
+
+<div class="footer">
+  <div class="verticalDiscover">
+    
+    <h3>Discover</h3>
+    <a href="#">Customer Stories</a>
+    <a href="services.html">Gift a photoshoot</a>
+    <a href="pricing.php">Pricing</a>
+    <a href="#">Review</a>
+  </div>
+  <div class="verticalPhotographer">
+    
+    <h3>Photographer?</h3>
+    <a href="#">Join our team</a>
+    <a href="#">Photographer Login</a>
+    
+  </div>
+  <div class="verticalCompany">
+    
+    <h3>Company</h3>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    
+  </div>
+  <div class="verticalNeedHelp">
+    
+    <h3>Need Help?</h3>
+    <a href="#">+774020028</a>
+    <p class="opentime">Mon-Fri 9.30am-7.00pm sat-sun 11.30am-5.00pm</p>
+    
+    
+  </div>
+  <div class="footerlogos">
+    
+    <a href="https://www.certify.com/" ><img src="images/certified.png"   class="logo2"></a>
+    <a href="https://www.paypal.com/lk/home" ><img src="images/payment.png"   class="logo3"></a>
+    
+  </div>
+  <hr class="line1">
+  <div class="footercompanylogo">
+  <a href="index.php" ><img src="images/Fineclix.png"   class="logo4"></a>
+  <p class="create">Created by MLB_PG.04.02_07</p>
+  </div>
+  <div class="footersocialmedialogos">
+    
+    <a href="https://www.facebook.com/" ><img src="images/facebook.png"   class="logo5"></a>
+    <a href="https://twitter.com/" ><img src="images/twitter.png"   class="logo6"></a>
+    <a href="https://www.instagram.com/" ><img src="images/instagram.png"   class="logo7"></a>
+    <a href="https://www.youtube.com/" ><img src="images/youtube.png"   class="logo8"></a>
+    
+  </div>
+  <hr class="line2">
+
+
+</div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,60 @@
+.heading-div{
+	text-align: center;
+	color: whitesmoke;
+}
+
+table{
+	border:1px solid #000; 
+	border-collapse:collapse; 
+	width:70%;
+	margin-left: 250px;
+}
+
+td{
+	border:3px solid black;
+	text-align: center;
+	background-color: plum;
+}
+
+th{
+	border:3px solid black;
+	text-align: center;
+	background-color:rgb(82, 6, 82);
+	color: whitesmoke;
+}
+
+.price-bg{
+	background-image: url(../images/priceBG.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+a{
+	color: black;
+}
+
+.bottom-a-price{
+	background-color:rgb(203, 30, 255);
+    position: relative;
+    width: 350px;
+    left: 100px;
+    border-radius: 12px;
+    top: -150px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.qoute-form{
+	text-align: center;
+	width:75%;
+	padding-left: 195px;
+	
+}
+

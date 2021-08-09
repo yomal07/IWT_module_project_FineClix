@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html><!--Start of html page-->
+
+
+<head><!--Start of head tag-->
+<title>Fineclix - Services(Form)</title>
+
+<link rel="stylesheet" href="css/headerfooter.css"><!--linking the CSS file responsible for header and footer-->
+<link rel="stylesheet" href="css/project.css"><!--linking the CSS file responsible for content-->
+<script src="js/project.js"></script><!--Linking the JS file-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+</head>
+<body><!--Start of the body tag-->
+
+<div class="header"><!--div tag to the navigation bar-->
+  <a href="index.php" ><img src="images/Fineclix.png"   class="logo"></a>
+  <div class="header-right">
+    <a class="offline"  href="index.php">Home</a>
+    <a class="offline" href="#">Log in/Sign Up</a>
+    <a class="active" href="services.html">Services</a>
+    <a class="offline" href="#">Print and Services</a>
+    <a class="offline" href="#">About Us</a>
+    <a class="offline" href="#">Contact Us</a>
+    <a class="offline" href="#">Join Our Team</a>
+    <div class="headeruser">
+    <a href="#" ><img src="images/user.png"   class="logo1"></a>
+      </div>
+
+    
+  </div>
+</div>
+<div class="form-div"><!--Starting of the form-->
+    <h1 style="margin: 0;">Fill it up and enjoy our services</h1>
+    <form onsubmit="return validatePassword()" method="POST" action="submit.php">
+        <p>A customer should fill this form with valid information.</p><br>
+		<h3 style="color:red;">*NOTE : Check out our Event prices which are visible in our <b><a href="pricing.php">PRICING</a></b> page</h3><br><br>
+
+        First Name:<br>
+        <input type="text" name="firstName" placeholder="Enter customer FirstName"><br><br>
+        Last Name:<br>
+        <input type="text" name="lastName" placeholder="Enter customer Surname"><br><br>
+        Mobile Number:<br>
+        <input type="phone" name="mobile" placeholder="07********" pattern="[0-9]{10}" required><br><br>
+        National Identity Card No. (NIC):<br>
+        <input type="text" name="nic" placeholder="123456789098" required><br><br>
+        Address:<br>
+        <textarea rows="4" cols="60" name="address"></textarea><br><br>
+        
+        Email:<br>
+        <input type="email" name="mail" placeholder="abc@gmail.com" pattern="[a-z0-9._&+-]+@[a-z0-9.-]+.[a-z{2-3}]" required><br><br>
+
+        <label for="events">Select an Event type:</label>
+        <select name="events" id="events">
+            <option value="Wedding Photography">Wedding Photography</option>
+            <option value="Preshoot">Pre-Shoots</option>
+            <option value="Birthday">Birthday Parties</option>
+            <option value="Convocation">Convocations</option>
+            <option value="BrideToBe">Bride-To-Be</option>
+            <option value="Prize Giving">Prize Givngs</option>
+            <option value="Opening Ceromony">Opening Ceromony</option>
+            <option value="Meeting">Formal Meetings</option>
+            <option value="Dinner Dance">Dinner Dance</option>
+            <option value="Festival">Festivals</option>
+           
+        </select><br><br>
+		
+		Enter Your Card Number:<input type="text" name="cardNo" pattern="[0-9]{16}" placeholder="1234 **** **** ****" required><br><br>
+		Enter CVC:<input type="text" name="cvc" pattern="[0-9]{3-6}"><br><br>
+		
+
+        
+
+        <input type="checkbox" id="chkbox" onclick="enableSubmit()"><span style="color:red;"><b>I hearby certify that the above information are true and correct</b></span><br><br>
+        <a href="#"><input type="submit" id="sbmt" value="Submit" disabled></a>
+
+    </form>
+</div>
+<hr class="line">
+
+<div class="footer">
+  <div class="verticalDiscover">
+    
+    <h3>Discover</h3>
+    <a href="#">Customer Stories</a>
+    <a href="servicesForm.html">Gift a photoshoot</a>
+    <a href="pricing.php">Pricing</a>
+    <a href="#">Review</a>
+  </div>
+  <div class="verticalPhotographer">
+    
+    <h3>Photographer?</h3>
+    <a href="#">Join our team</a>
+    <a href="#">Photographer Login</a>
+    
+  </div>
+  <div class="verticalCompany">
+    
+    <h3>Company</h3>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    
+  </div>
+  <div class="verticalNeedHelp">
+    
+    <h3>Need Help?</h3>
+    <a href="#">+774020028</a>
+    <p class="opentime">Mon-Fri 9.30am-7.00pm sat-sun 11.30am-5.00pm</p>
+    
+    
+  </div>
+  <div class="footerlogos">
+    
+    <a href="https://www.certify.com/" ><img src="images/certified.png"   class="logo2"></a>
+    <a href="https://www.paypal.com/lk/home" ><img src="images/payment.png"   class="logo3"></a>
+    
+  </div>
+  <hr class="line1">
+  <div class="footercompanylogo">
+  <a href="index.html" ><img src="images/Fineclix.png"   class="logo4"></a>
+  <p class="create">Created by MLB_PG.04.02_07</p>
+  </div>
+  <div class="footersocialmedialogos">
+    
+    <a href="https://www.facebook.com/" ><img src="images/facebook.png"   class="logo5"></a>
+    <a href="https://twitter.com/" ><img src="images/twitter.png"   class="logo6"></a>
+    <a href="https://www.instagram.com/" ><img src="images/instagram.png"   class="logo7"></a>
+    <a href="https://www.youtube.com/" ><img src="images/youtube.png"   class="logo8"></a>
+    
+  </div>
+  <hr class="line2">
+
+
+</div>
+
+
+</body>
+
+
+</html>
